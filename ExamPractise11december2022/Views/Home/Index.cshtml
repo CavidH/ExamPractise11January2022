@@ -1,0 +1,197 @@
+﻿ @model FeaturedHomeVM
+    <section id="head-slider">
+        <div class="container headslider ">
+            <h1>Welcome to <span>BizLand</span></h1>
+            <h2>We are team of talented designers making websites with Bootstrap</h2>
+            <div class="d-flex pt-4">
+                <a href="#about" class="btn btn-primary px-3"> Get Started</a>
+                <a href="#" class="video d-flex px-3"><i class="far fa-play-circle"></i><span>Watch Video</span></a>
+            </div>
+        </div>
+    </section>
+    <section id="Featured">
+        <div class="container cardss mt-5">
+            <div class=" headcards row d-flex    align-items-center ">
+               @foreach (var card in Model.FeaturedHomeVms)
+               {
+                   <div class="card col-3  p-1 " style="width: 20rem;">
+                       <div class="card-body  ">
+                           @Html.Raw(card.IconLink)
+                           <h5 class="card-title">@card.Title</h5>
+                           <p class="card-text">
+                               @card.Content
+                           </p>
+                       </div>
+                   </div>
+               }
+                @*<div class="card  col-3 p-1" style="width: 20rem;">
+                    <div class="card-body  ">
+                        <i class="far fa-file-code"></i>
+                        <h5 class="card-title">Sed ut perspiciatis</h5>
+                        <p class="card-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        </p>
+                    </div>
+                </div>
+                <div class="card  col-3  p-1 " style="width: 20rem;">
+                    <div class="card-body">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h5 class="card-title">Magni Dolores</h5>
+                        <p class="card-text">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        </p>
+                    </div>
+                </div>
+                <div class="card  col-3 p-1 " style="width: 20rem;">
+                    <div class="card-body">
+                        <i class="fas fa-globe-americas"></i>
+                        <h5 class="card-title">Nemo Enim</h5>
+                        <p class="card-text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        </p>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </section>
+    <section id="Services">
+        <div class="container-fluid d-flex justify-content-center mt-5">
+            <div class="row">
+                <div class="Service-title">
+                    <h2>Services</h2>
+                    <h3>Check our <span>Services</span></h3>
+                    <p>
+                        Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+                        atque vitae autem.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container  mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="card-body ">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <i class="fas fa-basketball-ball"></i>
+
+                            <h4 class="card-title">Lorem Impus</h4>
+
+                            <p class="Description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="testimonial text-center mt-5">
+        <div class="container">
+
+            <div class="heading white-heading">
+
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="Assets/Img/testimonials-1.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="Assets/Img/testimonials-2.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="Assets/Img/testimonials-3.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
